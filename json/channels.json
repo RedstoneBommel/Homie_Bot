@@ -1,0 +1,14 @@
+{
+    "admin": {
+        "log": "",
+        "onlyAdmin": ""
+    },
+    "general": {
+        "join": "",
+        "support": "",
+        "dailyCoins": "",
+        "games": "",
+        "funny": "",
+        "rules": ""
+    }
+}

@@ -1,0 +1,4 @@
+{
+    "DockerRun.DisableDockerrc": true,
+    "java.debug.settings.onBuildFailureProceed": true
+}
