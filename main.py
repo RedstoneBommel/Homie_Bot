@@ -3,7 +3,6 @@ from admin import AdminCommand, roles, log
 from discord.ext import commands
 from dotenv import load_dotenv
 import discord
-import json
 import os
 
 class HomieBot(commands.Bot):
