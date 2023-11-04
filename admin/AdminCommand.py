@@ -3,6 +3,7 @@ from discord import app_commands
 from discord.ext import commands
 import json
 import discord
+import os
 
 def has_role(role_name):
     def predicate(interaction: discord.Interaction):
@@ -23,7 +24,7 @@ class admin(commands.Cog):
         admin_data.close()
 
     # Delete messages
-    @app_commands.command(name = "delete_messages", description = "Delete messages...")
+    @app_commands.command(name = "delete_messages", description = "Delete messages")
     @has_role(adminRole)
     async def delete_messages(self, interaction: discord.Interaction, number: int, member: discord.Member = None):
         delete_counter = 0
