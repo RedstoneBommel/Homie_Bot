@@ -1,2 +1,7 @@
 .env
-json
+json/channels.json
+json/roles.json
+json/rules.json
+json/banns.json
+json/timeOuts.json
+json/kicks.json
