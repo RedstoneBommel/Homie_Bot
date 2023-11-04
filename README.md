@@ -1,3 +1,3 @@
 # Homie_Bot
 
-Ein Discord Bot erstellt von RedstoneBommel, um auf Servern zu supporten, kontrollieren, unterhalten & co.
+A Discord bot created by RedstoneBommel to provide support, control, entertain, and more on servers.
