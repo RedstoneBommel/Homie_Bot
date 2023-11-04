@@ -16,7 +16,7 @@ class admin(commands.Cog):
 
     adminRole = []
 
-    with open("../json/admin.json", "r") as admin_data:
+    with open("json/admin.json", "r") as admin_data:
         if "adminRoles" in admin_data:
             for i in "adminRoles":
                 adminRole.append(i)
@@ -36,7 +36,7 @@ class admin(commands.Cog):
                     return(f"{delete_counter} message deleted.")
                 else:
                     return(f"{delete_counter} messages deleted.")
-    @deletemessages.error
+    @delete_messages.error
     async def messages_error(self, interaction: discord.Interaction, error: app_commands.AppCommandError):
         if isinstance(error, app_commands.MissingRole):
             await interaction.response.send_message(str(error), ephemeral = True)
@@ -49,7 +49,7 @@ class admin(commands.Cog):
         guild = interaction.guild
 
         try:
-            with open("../json/banns.json", "r") as ban_data:
+            with open("json/banns.json", "r") as ban_data:
                 bannedUsers = json.load(ban_data)
         except FileNotFoundError:
             pass
@@ -61,7 +61,7 @@ class admin(commands.Cog):
         }
         bannedUsers.append(bannedUser)
 
-        with open("../json/banns.json", "w") as ban_data:
+        with open("json/banns.json", "w") as ban_data:
             json.dump(bannedUsers, ban_data)
         
         await guild.ban(member, reason = reason)
@@ -73,7 +73,7 @@ class admin(commands.Cog):
         guild = interaction.guild
 
         try:
-            with open("../json/banns.json", "r") as file:
+            with open("json/banns.json", "r") as file:
                 bannedUsers = json.load(file)
         except FileNotFoundError:
             pass
@@ -109,7 +109,7 @@ class admin(commands.Cog):
         permission.send_messages = False
 
         try:
-            with open("../json/mute.json", "r") as mute_data:
+            with open("json/mute.json", "r") as mute_data:
                 muteUsers = json.load(mute_data)
         except FileNotFoundError:
             pass
@@ -121,7 +121,7 @@ class admin(commands.Cog):
         }
         muteUsers.append(muteUser)
 
-        with open("../json/mute.json", "w") as mute_data:
+        with open("json/mute.json", "w") as mute_data:
             json.dump(muteUsers, mute_data)
 
         for channel in interaction.guild.channels:
@@ -138,7 +138,7 @@ class admin(commands.Cog):
         permission.send_messages = True
 
         try:
-            with open("../json/mute.json", "r") as mute_data:
+            with open("json/mute.json", "r") as mute_data:
                 muteUsers = json.load(mute_data)
         except FileNotFoundError:
             pass
@@ -148,7 +148,7 @@ class admin(commands.Cog):
         if len(filteredUsers) == len(muteUsers):
             return(f"User {member.name} ({member.id}) isn't muted")
 
-        with open ("../json/mute.json", "w") as mute_data:
+        with open ("json/mute.json", "w") as mute_data:
             json.dump(filteredUsers, mute_data)
 
         for channel in interaction.guild.channels:
@@ -157,4 +157,5 @@ class admin(commands.Cog):
         
         await interaction.response.send_message(f"{member.mention} your aren't muted anymore")
 
-
+async def setup(bot):
+    await bot.add_cog(admin(bot))

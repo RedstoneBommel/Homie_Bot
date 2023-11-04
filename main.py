@@ -11,7 +11,7 @@ class HomieBot(commands.Bot):
         super().__init__(command_prefix = "!", intents = intents)
     
     async def on_ready(self):
-        # await self.load_extension('admin.AdminCommand')
+        await self.load_extension('admin.AdminCommand')
         # await self.load_extension('admin.roles')
         # await self.load_extension('admin.log')
 
@@ -22,7 +22,7 @@ class HomieBot(commands.Bot):
         # await self.load_extension('command.games')
         # await self.load_extension('command.joins')
 
-        # await self.tree.sync()
+        await self.tree.sync()
 
         print("Bot is ready")
     
