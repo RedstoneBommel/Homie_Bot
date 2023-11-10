@@ -1,3 +1,5 @@
 {
-    
+   "bannedWords": ["Hurensohn"],
+   "bannedAdresses": [],
+   "bannedLinks": [] 
 }
