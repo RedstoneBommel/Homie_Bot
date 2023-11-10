@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from discord import app_commands
 from discord.ext import commands
 import json
@@ -50,8 +50,8 @@ class admin(commands.Cog):
         guild = interaction.guild
 
         try:
-            with open("json/banns.json", "r") as ban_data:
-                bannedUsers = json.load(ban_data)
+            with open("json/banns.json", "r") as admin_data:
+                bannedUsers = json.load(admin_data)
         except FileNotFoundError:
             pass
 
@@ -62,8 +62,8 @@ class admin(commands.Cog):
         }
         bannedUsers.append(bannedUser)
 
-        with open("json/banns.json", "w") as ban_data:
-            json.dump(bannedUsers, ban_data)
+        with open("json/banns.json", "w") as admin_data:
+            json.dump(bannedUsers, admin_data)
         
         await guild.ban(member, reason = reason)
         await interaction.response.send_message(f"User {member.name} ({member.id}) is banned now") 
@@ -74,8 +74,8 @@ class admin(commands.Cog):
         guild = interaction.guild
 
         try:
-            with open("json/banns.json", "r") as file:
-                bannedUsers = json.load(file)
+            with open("json/banns.json", "r") as admin_data:
+                bannedUsers = json.load(admin_data)
         except FileNotFoundError:
             pass
 
@@ -85,8 +85,8 @@ class admin(commands.Cog):
             await interaction.response.send_message(f"User {member.name} ({member.id}) isn't banned")
             return
 
-        with open("Owners/banned_users.json", "w") as file:
-            json.dump(filteredUsers, file)
+        with open("Owners/banned_users.json", "w") as admin_data:
+            json.dump(filteredUsers, admin_data)
 
         await guild.unban(member)
         await interaction.response.send_message(f"User {member.name} ({member.id}) is unbanned now")
@@ -103,27 +103,40 @@ class admin(commands.Cog):
     # Mute/Unmute User
     @app_commands.command(name = "mute", description = "Mute a user")
     @has_role(adminRole)
-    async def mute(self, interaction: discord.Interaction, member: discord.Member, reason: str = None):
+    async def mute(self, interaction: discord.Interaction, member: discord.Member, hours: int = None, minutes: int = None, reason: str = None):
+        
+        if hours and minutes == None:
+            timeoutTime = timedelta(hours = 24, minutes = 0, seconds = 0)
+        elif hours != None and minutes == None:
+            timeoutTime = timedelta(hours = hours, minutes = 0, seconds = 0)
+        elif hours == None and minutes != None:
+            timeoutTime = timedelta(hours = 0, minutes = minutes, seconds = 0)
+        else:
+            timeoutTime = timedelta(hours = hours, minutes = minutes, seconds = 0)
+        
         muteUsers = []
         permission = discord.PermissionOverwrite()
         permission.speak = False
         permission.send_messages = False
+        timeNow = datetime.now()
+        timeoutTime = timeNow + timeoutTime
 
         try:
-            with open("json/mute.json", "r") as mute_data:
-                muteUsers = json.load(mute_data)
+            with open("json/mute.json", "r") as admin_data:
+                muteUsers = json.load(admin_data)
         except FileNotFoundError:
             pass
 
         muteUser = {
             "name": member.name,
             "id": member.id,
-            "reason": reason
+            "reason": reason,
+            "timeMuted": timeoutTime.isoformat()
         }
         muteUsers.append(muteUser)
 
-        with open("json/mute.json", "w") as mute_data:
-            json.dump(muteUsers, mute_data)
+        with open("json/mute.json", "w") as admin_data:
+            json.dump(muteUsers, admin_data)
 
         for channel in interaction.guild.channels:
             if isinstance(channel, discord.VoiceChannel) or isinstance(channel, discord.TextChannel):
@@ -139,8 +152,8 @@ class admin(commands.Cog):
         permission.send_messages = True
 
         try:
-            with open("json/mute.json", "r") as mute_data:
-                muteUsers = json.load(mute_data)
+            with open("json/mute.json", "r") as admin_data:
+                muteUsers = json.load(admin_data)
         except FileNotFoundError:
             pass
 
@@ -149,8 +162,8 @@ class admin(commands.Cog):
         if len(filteredUsers) == len(muteUsers):
             return(f"User {member.name} ({member.id}) isn't muted")
 
-        with open ("json/mute.json", "w") as mute_data:
-            json.dump(filteredUsers, mute_data)
+        with open ("json/mute.json", "w") as admin_data:
+            json.dump(filteredUsers, admin_data)
 
         for channel in interaction.guild.channels:
             if isinstance(channel, discord.VoiceChannel) or isinstance(channel, discord.TextChannel):
