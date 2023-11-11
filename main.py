@@ -42,9 +42,18 @@ class HomieBot(commands.Bot):
                 await message.author.send(f"Please don't use this word: {i}")
                 with open('json/member.json', 'r') as admin_data:
                     memberJSON = json.load(admin_data)
+                guild = message.guild
+                discord_member = await guild.fetch_member(message.author.id)
                 if message.author.name in memberJSON:
-                    print("check")
+                    print(f"bannedWord used by {message.author.name}")
                     memberJSON[message.author.name]['bannedWordsCounter'] += 1
+                    maxValue = 3
+                    kickValue = 5
+                    if memberJSON[message.author.name]['bannedWordsCounter'] == maxValue:
+                        await discord_member.send("You used the banned words three times, two times more and you will be banned.")
+                    elif memberJSON[message.author.name]['bannedWordsCounter'] == kickValue:
+                        await guild.kick(discord_member)
+                        await discord_member.send("You used the banned words five times, now you are banned.")
                 else:
                     memberJSON[message.author.name] = {"bannedWordsCounter": 1}
                 with open('json/member.json', 'w') as admin_data:

@@ -28,12 +28,14 @@ class admin(commands.Cog):
     @has_role(adminRole)
     async def delete_messages(self, interaction: discord.Interaction, number: int, member: discord.Member = None):
         delete_counter = 0
+        number += 1
+        await interaction.response.send_message("Deleting messages")
         async for message in interaction.channel.history():
             if message.author == member or member == None:
                 await message.delete()
                 delete_counter += 1
             if delete_counter == number:
-                if delete_counter == 1:
+                if delete_counter == 2:
                     return(f"{delete_counter} message deleted.")
                 else:
                     return(f"{delete_counter} messages deleted.")
