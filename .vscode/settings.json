@@ -4,5 +4,12 @@
     "cSpell.words": [
         "dotenv",
         "unmuted"
-    ]
+    ],
+    "graalvm.home": "",
+    "graalvm.installations": [
+        ""
+    ],
+    "terminal.integrated.env.windows": {
+        "GRAALVM_HOME": ""
+    }
 }

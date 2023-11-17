@@ -1,1 +1,8 @@
-{"redstonebommel": {"bannedWordsCounter": 0, "id": 1060970436827025500, "name": "redstonebommel"}}
+{
+    "redstonebommel": {
+        "bannedWordsCounter": 0,
+        "id": 1060970436827025502,
+        "name": "redstonebommel",
+        "roles": ["💻 | Entwickler | 💻", "Informatik"]
+    }
+}

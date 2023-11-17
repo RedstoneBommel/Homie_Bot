@@ -14,7 +14,7 @@ class HomieBot(commands.Bot):
     async def on_ready(self):
         await self.load_extension('admin.AdminCommand')
         await self.load_extension('admin.AutoAdmin')
-        # await self.load_extension('admin.roles')
+        await self.load_extension('admin.roles')
         # await self.load_extension('admin.log')
 
         # await self.load_extension('command.CommandsCommand')
