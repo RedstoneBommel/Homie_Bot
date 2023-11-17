@@ -52,8 +52,8 @@ class HomieBot(commands.Bot):
                     if memberJSON[message.author.name]['bannedWordsCounter'] == maxValue:
                         await discord_member.send("You used the banned words three times, two times more and you will be banned.")
                     elif memberJSON[message.author.name]['bannedWordsCounter'] == kickValue:
+                        await discord_member.send("You used the banned words five times, now you are kicked.")
                         await guild.kick(discord_member)
-                        await discord_member.send("You used the banned words five times, now you are banned.")
                 else:
                     memberJSON[message.author.name] = {"bannedWordsCounter": 1}
                 with open('json/member.json', 'w') as admin_data:

@@ -28,21 +28,16 @@ class roles(commands.Cog):
             with open("json/member.json", "r") as admin_data:
                 memberJSON = json.load(admin_data)
             for roles in memberJSON[member.name]['roles']:
-                print("check")
                 if role == roles:
                     interaction.response.send_message("The user already has the role.")
                     return "role already assigned to user"
             await member.add_roles(role)
-            interaction.response.send_message("Role added successfully.")
-            return "role added successfully"
         elif action == "remove":
             with open("json/member.json", "r") as admin_data:
                 memberJSON = json.load(admin_data)
             for roles in memberJSON[member.name]['roles']:
                 if role == roles:
                     await member.remove_roles(role)
-                    interaction.response.send_message("Role removed successfully.")
-                    return "role removed from user"
             interaction.response.send_message("The user doesn't have the role.")
             return "role is not assigned to user"
         else:
