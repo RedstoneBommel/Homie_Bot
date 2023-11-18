@@ -68,9 +68,9 @@ class admin(commands.Cog):
             json.dump(bannedUsers, admin_data)
         
         await guild.ban(member, reason = reason)
-        await interaction.response.send_message(f"User {member.name} ({member.id}) is banned now") 
+        await interaction.response.send_message(f"User {member.name} ({member.id}) is banned now")
     @app_commands.command(name = "unban", description = "Unban a user")
-    @has_role(adminRole)      
+    @has_role(adminRole)
     async def unban(self, interaction: discord.Interaction, member: discord.User):
         bannedUsers = []
         guild = interaction.guild
@@ -99,7 +99,7 @@ class admin(commands.Cog):
     async def kick(self, interaction: discord.Interaction, member: discord.Member, reason: str = None):
         guild = interaction.guild
 
-        await guild.kick(member, reason = reason) 
+        await guild.kick(member, reason = reason)
         await interaction.response.send_message(f"User {member.name} ({member.id}) is kicked now")
     
     # Mute/Unmute User

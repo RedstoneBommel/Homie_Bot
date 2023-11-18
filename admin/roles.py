@@ -21,6 +21,7 @@ class roles(commands.Cog):
                 adminRole.append(i)
         admin_data.close()
     
+    # Add / Remove role from a user
     @app_commands.command(name = "role", description = "Add a role or remove a role from a user")
     @has_role(adminRole)
     async def role(self, interaction: discord.Interaction, role: discord.Role, action: str, member: discord.Member):
@@ -43,6 +44,16 @@ class roles(commands.Cog):
         else:
             await interaction.response.send_message("You don't use an official action")
             return "wrong action"
-
+    
+    # Create / Delete roles
+    @app_commands.command(name = "add_role", description = "Add a role to the guild")
+    @has_role(adminRole)
+    async def add_role(self, interaction: discord.Interaction, role: str):
+        await interaction.guild.create_role(name = role)
+    @app_commands.command(name = "delete_role", description = "Delete a role from the guild")
+    @has_role(adminRole)
+    async def delete_role(self, interaction: discord.Interaction, role: discord.Role):
+        await interaction.guild._remove_role(name = role)
+    
 async def setup(bot):
     await bot.add_cog(roles(bot))
