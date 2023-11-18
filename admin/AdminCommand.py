@@ -24,9 +24,9 @@ class admin(commands.Cog):
         admin_data.close()
 
     # Delete messages
-    @app_commands.command(name = "delete_messages", description = "Delete messages")
+    @app_commands.command(name = "messages_delete", description = "Delete messages")
     @has_role(adminRole)
-    async def delete_messages(self, interaction: discord.Interaction, number: int, member: discord.Member = None):
+    async def deleteMessages(self, interaction: discord.Interaction, number: int, member: discord.Member = None):
         delete_counter = 0
         number += 1
         await interaction.response.send_message("Deleting messages")
@@ -39,7 +39,7 @@ class admin(commands.Cog):
                     return(f"{delete_counter} message deleted.")
                 else:
                     return(f"{delete_counter} messages deleted.")
-    @delete_messages.error
+    @deleteMessages.error
     async def messages_error(self, interaction: discord.Interaction, error: app_commands.AppCommandError):
         if isinstance(error, app_commands.MissingRole):
             await interaction.response.send_message(str(error), ephemeral = True)
