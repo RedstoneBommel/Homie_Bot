@@ -1,5 +1,5 @@
 from command import CommandsCommand, help, info, funny, games, joins
-from admin import AdminCommand, AutoAdmin, roles, log
+from admin import AdminCommand, AutoAdmin, roles
 from discord.ext import commands
 from dotenv import load_dotenv
 import discord
@@ -15,11 +15,10 @@ class HomieBot(commands.Bot):
         await self.load_extension('admin.AdminCommand')
         await self.load_extension('admin.AutoAdmin')
         await self.load_extension('admin.roles')
-        # await self.load_extension('admin.log')
 
         # await self.load_extension('command.CommandsCommand')
         # await self.load_extension('command.help')
-        # await self.load_extension('command.info')
+        await self.load_extension('command.info')
         # await self.load_extension('command.funny')
         # await self.load_extension('command.games')
         # await self.load_extension('command.joins')
@@ -58,7 +57,6 @@ class HomieBot(commands.Bot):
                     memberJSON[message.author.name] = {"bannedWordsCounter": 1}
                 with open('json/member.json', 'w') as admin_data:
                     json.dump(memberJSON, admin_data)
-
         
 load_dotenv()
 

@@ -1,3 +1,6 @@
 {
-    "adminRoles": "💻 | Entwickler | 💻"
+    "adminRoles": [
+        "💻 | Entwickler | 💻",
+        "🔨 | Helfer | 🔨"
+    ]
 }

@@ -10,7 +10,7 @@ class autoAdmin(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
-    # Automatic unmute 
+    # Automatic unmute
     def load_userData(filename):
         try:
             with open(filename, 'r') as admin_data:
@@ -40,7 +40,6 @@ class autoAdmin(commands.Cog):
                     with open ("json/mute.json", "w") as admin_data:
                         json.dump(filteredUsers, admin_data)
             await asyncio.sleep(60)
-
     if __name__ == "__main__":
         users = load_userData("json/mute.json")
         asyncio.run(check_unmuteTime(users))
