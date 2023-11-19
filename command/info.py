@@ -29,8 +29,9 @@ class info(commands.Cog):
             await interaction.response.send_message(f"{member.mention} you will find the rules in {ruleChannel[0].mention}")
             return ruleChannel[0]
         channelList = [channel.name for channel in interaction.guild.channels]
+        channelNamePart = []
         for channel in channelList:
-            channelNamePart = [channel.name.split("")]
+            channelNamePart.append(channel)
             ruleTitles = ["rule", "rules", "Regeln", "regeln"]
             for part in channelNamePart:
                 for title in ruleTitles:

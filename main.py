@@ -1,4 +1,4 @@
-from command import CommandsCommand, help, info, funny, games, joins
+from command import help, info, funny, games, joins
 from admin import AdminCommand, AutoAdmin, roles
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -16,7 +16,6 @@ class HomieBot(commands.Bot):
         await self.load_extension('admin.AutoAdmin')
         await self.load_extension('admin.roles')
 
-        # await self.load_extension('command.CommandsCommand')
         # await self.load_extension('command.help')
         await self.load_extension('command.info')
         # await self.load_extension('command.funny')
