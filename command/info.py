@@ -20,30 +20,27 @@ class info(commands.Cog):
     @has_role(everyone)
     async def rules(self, interaction: discord.Interaction):
         member = interaction.user
-        ruleChannel = []
         with open("json/admin.json", "r") as admin_data:
             channels = json.load(admin_data)
-        if "ruleChannel" in channels:
-            for i in "ruleChannel":
-                ruleChannel.append(i)
-            await interaction.response.send_message(f"{member.mention} you will find the rules in {ruleChannel[0].mention}")
-            return ruleChannel[0]
-        channelList = [channel.name for channel in interaction.guild.channels]
-        channelNamePart = []
+        if "ruleChannel" in channels and channels["ruleChannel"] != "None":
+            ruleChannel = channels["ruleChannel"]
+            discordRuleChannel = interaction.guild.channels
+            for channel in discordRuleChannel:
+                if channel == ruleChannel:
+                    await interaction.response.send_message(f"{member.mention} you will find the rules in {channel.mention}")
+                    return ruleChannel
+        channelList = [channel for channel in interaction.guild.channels]
+        ruleTitles = ["rule", "rules", "Rules", "Rule", "Regeln", "regeln"]
         for channel in channelList:
-            channelNamePart.append(channel)
-            ruleTitles = ["rule", "rules", "Regeln", "regeln"]
-            for part in channelNamePart:
                 for title in ruleTitles:
-                    if title == part:
-                        ruleChannel.append(channel)
+                    if title == channel.name:
                         with open("json/admin.json", "r+") as admin_data:
                             data = json.load(admin_data)
-                            data["ruleChannel"] = channel
+                            data["ruleChannel"] = channel.name
                             admin_data.seek(0)
                             json.dump(data, admin_data)
-                        await interaction.response.send_message(f"{member.mention} you will find the rules in {ruleChannel[0].mention}")
-                        return ruleChannel[0]
+                        await interaction.response.send_message(f"{member.mention} you will find the rules in {channel.mention}")
+                        return channel.name
         await interaction.response.send_message(f"{member.mention} there isn't any channel with rules. May ask an server admin.")
         return "no rules channel found"
         
