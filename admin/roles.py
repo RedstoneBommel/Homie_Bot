@@ -35,12 +35,22 @@ class roles(commands.Cog):
                     return "role already assigned to user"
             await interaction.response.send_message(f"{member.mention} got the role {role.mention}")
             await member.add_roles(role)
+            with open("json/member.json", "w") as admin_data:
+                memberJSON = json.load(admin_data)
+                memberJSON[member.name]['roles'].append(role.name)
+                admin_data.write(json.dumps(memberJSON))
+                admin_data.close()
         elif action == "remove":
             with open("json/member.json", "r") as admin_data:
                 memberJSON = json.load(admin_data)
             for roles in memberJSON[member.name]['roles']:
                 if role == roles:
                     await member.remove_roles(role)
+                    with open("json/member.json", "w") as admin_data:
+                        memberJSON = json.load(admin_data)
+                        memberJSON[member.name]['roles'].remove(role.name)
+                        admin_data.write(json.dumps(memberJSON))
+                        admin_data.close()
             interaction.response.send_message("The user doesn't have the role.")
             return "role is not assigned to user"
         else:
