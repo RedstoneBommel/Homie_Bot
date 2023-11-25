@@ -23,40 +23,55 @@ class roles(commands.Cog):
         admin_data.close()
     
     # Add / Remove role from a user
-    @app_commands.command(name = "role", description = "Add a role or remove a role from a user")
+    @app_commands.command(name="role", description="Add a role or remove a role from a user")
     @has_role(adminRole)
     async def role(self, interaction: Interaction, role: Role, action: str, member: Member):
+        role = role
         if action == "add":
             with open("json/member.json", "r") as admin_data:
                 memberJSON = json.load(admin_data)
-            for roles in memberJSON[member.name]['roles']:
-                if role == roles:
-                    interaction.response.send_message("The user already has the role.")
-                    return "role already assigned to user"
-            await interaction.response.send_message(f"{member.mention} got the role {role.mention}")
-            await member.add_roles(role)
-            with open("json/member.json", "w") as admin_data:
-                memberJSON = json.load(admin_data)
+                memberJSON[member.name]['roles']
+                try:
+                    print(memberJSON[member.name]['roles'])
+                except UnicodeEncodeError:
+                    print("Unable to print member_roles due to an unsupported Unicode character.")
+                for roles in memberJSON[member.name]['roles']:
+                    if role.name == roles:
+                        await interaction.response.send_message(f"{member.mention} hat bereits die Rolle {role.mention}.")
+                        return "Rolle bereits dem Benutzer zugewiesen"
+                await interaction.response.send_message(f"{member.mention} hat die Rolle {role.mention} erhalten.")
+                await member.add_roles(role)
                 memberJSON[member.name]['roles'].append(role.name)
-                admin_data.write(json.dumps(memberJSON))
+                try:
+                    print(memberJSON[member.name]['roles'])
+                except UnicodeEncodeError:
+                    print("Unable to print member_roles due to an unsupported Unicode character.")
+            with open("json/member.json", "w") as admin_data:
+                json.dump(memberJSON, admin_data)
                 admin_data.close()
         elif action == "remove":
             with open("json/member.json", "r") as admin_data:
                 memberJSON = json.load(admin_data)
-            for roles in memberJSON[member.name]['roles']:
-                if role == roles:
-                    await member.remove_roles(role)
-                    with open("json/member.json", "w") as admin_data:
-                        memberJSON = json.load(admin_data)
+                memberJSON[member.name]['roles']
+                try:
+                    print(memberJSON[member.name]['roles'])
+                except UnicodeEncodeError:
+                    print("Unable to print member_roles due to an unsupported Unicode character.")
+                for roles in memberJSON[member.name]['roles']:
+                    if role.name == roles:
+                        await member.remove_roles(role)
                         memberJSON[member.name]['roles'].remove(role.name)
-                        admin_data.write(json.dumps(memberJSON))
-                        admin_data.close()
-            interaction.response.send_message("The user doesn't have the role.")
-            return "role is not assigned to user"
+                        with open("json/member.json", "w") as admin_data:
+                            json.dump(memberJSON, admin_data)
+                            admin_data.close()
+                        await interaction.response.send_message(f"{role.mention} wurde von {member.mention} entfernt.")
+                        return "Rolle vom Benutzer entfernt"
+            await interaction.response.send_message(f"{member.mention} hat die Rolle {role.mention} nicht.")
+            return "Rolle ist dem Benutzer nicht zugewiesen"
         else:
-            await interaction.response.send_message("You don't use an official action")
-            return "wrong action"
-    
+            await interaction.response.send_message("Sie verwenden keine offizielle Aktion.")
+            return "Falsche Aktion"
+        
     # Create / Delete roles
     @app_commands.command(name = "add_role", description = "Add a role to the guild")
     @has_role(adminRole)
