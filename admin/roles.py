@@ -13,15 +13,12 @@ def has_role(role_name):
 class roles(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-    
     adminRole = []
-
     with open("json/admin.json", "r") as admin_data:
         if "adminRoles" in admin_data:
             for i in "adminRoles":
                 adminRole.append(i)
         admin_data.close()
-    
     # Add / Remove role from a user
     @app_commands.command(name="role", description="Add a role or remove a role from a user")
     @has_role(adminRole)
@@ -71,7 +68,6 @@ class roles(commands.Cog):
         else:
             await interaction.response.send_message("Sie verwenden keine offizielle Aktion.")
             return "Falsche Aktion"
-        
     # Create / Delete roles
     @app_commands.command(name = "add_role", description = "Add a role to the guild")
     @has_role(adminRole)

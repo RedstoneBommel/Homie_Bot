@@ -7,33 +7,25 @@ import os
 import json
 
 class HomieBot(commands.Bot):
-
     def __init__(self, intents):
         super().__init__(command_prefix = "!", intents = intents)
-    
     async def on_ready(self):
         print("load extensions")
         await self.load_extension('admin.AdminCommand')
         await self.load_extension('admin.AutoAdmin')
         await self.load_extension('admin.roles')
-
         # await self.load_extension('command.help')
         await self.load_extension('command.info')
         # await self.load_extension('command.funny')
         # await self.load_extension('command.games')
         # await self.load_extension('command.joins')
         await self.load_extension('command.translation')
-
         print("sync extensions")
         await self.tree.sync()
-
         print("Bot is ready")
-    
     async def on_message(self, message):
-
         if message.author == self.user:
             return
-        
         messageWords = message.content.split()
         with open('json/bannedWords.json', 'r') as admin_data:
             bannedWords = json.load(admin_data)
@@ -59,9 +51,7 @@ class HomieBot(commands.Bot):
                     memberJSON[message.author.name] = {"bannedWordsCounter": 1}
                 with open('json/member.json', 'w') as admin_data:
                     json.dump(memberJSON, admin_data)
-        
 load_dotenv()
-
 token = os.getenv('TOKEN')
 intents = discord.Intents.all()
 HomieBot = HomieBot(intents = intents)

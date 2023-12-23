@@ -12,9 +12,7 @@ def has_role(role_name):
 class info(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-
     everyone = "@everyone"
-
     # Rules Channel Detection
     @app_commands.command(name = "rules", description = "Shows you the rules channel")
     @has_role(everyone)
@@ -43,7 +41,6 @@ class info(commands.Cog):
                         return channel.name
         await interaction.response.send_message(f"{member.mention} there isn't any channel with rules. May ask an server admin.")
         return "no rules channel found"
-    
     # Information about every single user
     @app_commands.command(name = "info", description = "Show information about users")
     @has_role(everyone)

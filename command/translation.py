@@ -14,9 +14,7 @@ def has_role(role_name):
 class translation(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-    
     everyone = "@everyone"
-
     @app_commands.command(name = "translate", description = "Translate messages to a specific language")
     @has_role(everyone)
     async def translate(self, interaction: Interaction, text: str, language: str = None):

@@ -9,7 +9,6 @@ import asyncio
 class autoAdmin(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-    
     # Automatic unmute
     def load_userData(filename):
         try:
@@ -30,13 +29,10 @@ class autoAdmin(commands.Cog):
                     permission.send_messages = True
                     guild = interaction.guild
                     member = guild.get_member(memberId)
-
                     for channel in interaction.guild.channels:
                         if isinstance(channel, discord.VoiceChannel) or isinstance(channel, discord.TextChannel):
                             await channel.set_permissions(member, overwrite = permission)
-                    
                     filteredUsers = [user for user in users if user["id"] != memberId]
-
                     with open ("json/mute.json", "w") as admin_data:
                         json.dump(filteredUsers, admin_data)
             await asyncio.sleep(60)
