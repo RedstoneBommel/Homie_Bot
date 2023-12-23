@@ -60,7 +60,7 @@ class info(commands.Cog):
                 print(serverRoles)
                 for role in roles:
                     for i in serverRoles:
-                        if role == i.name:
+                        if role == i.id:
                             role_mentions.append(i.mention)
             else:
                 return f"{member} didn't exist"

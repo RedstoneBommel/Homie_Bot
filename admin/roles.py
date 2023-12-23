@@ -36,12 +36,12 @@ class roles(commands.Cog):
                 except UnicodeEncodeError:
                     print("Unable to print member_roles due to an unsupported Unicode character.")
                 for roles in memberJSON[member.name]['roles']:
-                    if role.name == roles:
+                    if role.id == roles:
                         await interaction.response.send_message(f"{member.mention} hat bereits die Rolle {role.mention}.")
                         return "Rolle bereits dem Benutzer zugewiesen"
                 await interaction.response.send_message(f"{member.mention} hat die Rolle {role.mention} erhalten.")
                 await member.add_roles(role)
-                memberJSON[member.name]['roles'].append(role.name)
+                memberJSON[member.name]['roles'].append(role.id)
                 try:
                     print(memberJSON[member.name]['roles'])
                 except UnicodeEncodeError:
@@ -58,9 +58,9 @@ class roles(commands.Cog):
                 except UnicodeEncodeError:
                     print("Unable to print member_roles due to an unsupported Unicode character.")
                 for roles in memberJSON[member.name]['roles']:
-                    if role.name == roles:
+                    if role.id == roles:
                         await member.remove_roles(role)
-                        memberJSON[member.name]['roles'].remove(role.name)
+                        memberJSON[member.name]['roles'].remove(role.id)
                         with open("json/member.json", "w") as admin_data:
                             json.dump(memberJSON, admin_data)
                             admin_data.close()
