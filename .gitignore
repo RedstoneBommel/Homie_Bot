@@ -1,1 +1,7 @@
 .env
+json/member.json
+json/admin.json
+json/bannedWords.json
+json/bans.json
+json/kicks.json
+json/mute.json
