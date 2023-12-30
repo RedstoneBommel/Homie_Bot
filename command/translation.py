@@ -16,6 +16,7 @@ class translation(commands.Cog):
         self.bot = bot
         self.translator = Translator()
     everyone = "@everyone"
+    # Translat any text direct in discord
     @app_commands.command(name = "translate", description = "Translate messages to a specific language")
     @has_role(everyone)
     async def translate(self, interaction: Interaction, text: str, language: str = None):
@@ -32,8 +33,6 @@ class translation(commands.Cog):
             # Senden der Nachfolgenachricht
             translated_text = self.translator.translate(text, src = src_language, dest = language).text
             await interaction.followup.send(translated_text)
-
-
 
 async def setup(bot):
     await bot.add_cog(translation(bot))

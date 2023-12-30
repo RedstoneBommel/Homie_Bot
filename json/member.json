@@ -1,1 +1,26 @@
-{}
+{
+    "redstonebommel": {
+        "name": "redstonebommel",
+        "id": 1060970436827025502,
+        "roles": [],
+        "bannedWordsCounter": 0
+    },
+    "ice_dragonii": {
+        "name": "ice_dragonii",
+        "id": 862345162394304544,
+        "roles": [],
+        "bannedWordsCounter": 0
+    },
+    "rethiaslich": {
+        "name": "rethiaslich",
+        "id": 773220498556321823,
+        "roles": [],
+        "bannedWordsCounter": 0
+    },
+    "h3rrv01d": {
+        "name": "h3rrv01d",
+        "id": 749192020010205246,
+        "roles": [],
+        "bannedWordsCounter": 0
+    }
+}

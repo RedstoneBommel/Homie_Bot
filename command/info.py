@@ -1,10 +1,10 @@
-from discord import app_commands
+from discord import app_commands, Embed, Color, Interaction, Member
 from discord.ext import commands
 import json
 import discord
 
 def has_role(role_name):
-    def predicate(interaction: discord.Interaction):
+    def predicate(interaction: Interaction):
         role = discord.utils.get(interaction.guild.roles, name = role_name)
         return role is not None
     return commands.check(predicate)
@@ -16,7 +16,7 @@ class info(commands.Cog):
     # Rules Channel Detection
     @app_commands.command(name = "rules", description = "Shows you the rules channel")
     @has_role(everyone)
-    async def rules(self, interaction: discord.Interaction):
+    async def rules(self, interaction: Interaction):
         member = interaction.user
         with open("json/admin.json", "r") as admin_data:
             channels = json.load(admin_data)
@@ -44,7 +44,7 @@ class info(commands.Cog):
     # Information about every single user
     @app_commands.command(name = "info", description = "Show information about users")
     @has_role(everyone)
-    async def info(self, interaction: discord.Interaction, member: discord.Member = None):
+    async def info(self, interaction: Interaction, member: Member = None):
         if member is None:
             member = interaction.user
         with open("json/member.json", "r+") as member_data:
@@ -61,8 +61,8 @@ class info(commands.Cog):
                             role_mentions.append(i.mention)
             else:
                 return f"{member} didn't exist"
-        memberCard = discord.Embed(title = f"Information about {member.name}")
-        memberCard.color = discord.Color.from_rgb(0, 255, 0)
+        memberCard = Embed(title = f"Information about {member.name}")
+        memberCard.color = Color.from_rgb(0, 255, 0)
         memberCard.set_thumbnail(url = member.display_avatar.url)
         memberCard.set_author(name = interaction.user, icon_url = interaction.user.display_avatar.url)
         memberCard.add_field(name = f"{member.name}", value = f"ID: {member.id}", inline = False)
