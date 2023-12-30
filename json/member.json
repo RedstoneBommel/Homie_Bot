@@ -2,25 +2,25 @@
     "redstonebommel": {
         "name": "redstonebommel",
         "id": 1060970436827025502,
-        "roles": [],
+        "roles": ["Cheffe"],
         "bannedWordsCounter": 0
     },
     "ice_dragonii": {
         "name": "ice_dragonii",
         "id": 862345162394304544,
-        "roles": [],
+        "roles": ["Member", "GameShowMember", "Team Blue"],
         "bannedWordsCounter": 0
     },
     "rethiaslich": {
         "name": "rethiaslich",
         "id": 773220498556321823,
-        "roles": [],
+        "roles": ["Member", "CityBuilder", "Coder", "GameShowMember", "Team Red"],
         "bannedWordsCounter": 0
     },
     "h3rrv01d": {
         "name": "h3rrv01d",
         "id": 749192020010205246,
-        "roles": [],
+        "roles": ["Member", "GameShowMember", "Team Orange"],
         "bannedWordsCounter": 0
     }
 }
