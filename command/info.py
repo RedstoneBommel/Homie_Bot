@@ -53,11 +53,9 @@ class info(commands.Cog):
                 roles = member_data[member.name]["roles"]
                 role_mentions = []
                 serverRoles = interaction.guild.roles
-                print(roles)
-                print(serverRoles)
                 for role in roles:
                     for i in serverRoles:
-                        if role == i.id:
+                        if role == i.name:
                             role_mentions.append(i.mention)
             else:
                 return f"{member} didn't exist"
