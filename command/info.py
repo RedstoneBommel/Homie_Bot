@@ -20,11 +20,11 @@ class info(commands.Cog):
         member = interaction.user
         with open("json/admin.json", "r") as admin_data:
             channels = json.load(admin_data)
-        if "ruleChannel" in channels and channels["ruleChannel"] != "None":
-            ruleChannel = channels["ruleChannel"]
+        if "rules" in channels and channels["rules"] != "None":
+            ruleChannel = channels["rules"]
             discordRuleChannel = interaction.guild.channels
             for channel in discordRuleChannel:
-                if channel == ruleChannel:
+                if channel.id == ruleChannel:
                     await interaction.response.send_message(f"{member.mention} you will find the rules in {channel.mention}")
                     return ruleChannel
         channelList = [channel for channel in interaction.guild.channels]

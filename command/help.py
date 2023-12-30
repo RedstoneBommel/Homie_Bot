@@ -56,14 +56,15 @@ class help(commands.Cog):
     @app_commands.command(name = "homie", description = "Who is Homie?")
     @has_role(everyone)
     async def homie(self, interaction: Interaction):
+        imageLink = Button(label = "Logo", url = "https://1drv.ms/i/s!AjQLh5fQXiNBhvQHdwjie5Alv0QzkA?e=NGMSJ9")
         githubLink = Button(label = "GitHub", url = "https://github.com/RedstoneBommel/Homie_Bot")
         github = View()
+        github.add_item(imageLink)
         github.add_item(githubLink)
         homie = Embed(title = "Who is Homie?")
         homie.color = Color.from_rgb(0, 0, 255)
         homie.add_field(name = "Homie (Discord Bot)", value = "Homie is a Discord bot created by RedstoneBommel to keep order and entertainment on Discord servers \n If you want more information you could check out RedstoneBommels GitHub")
         await interaction.response.send_message(embed = homie, view = github)
-
 
 async def setup(bot):
     await bot.add_cog(help(bot))
