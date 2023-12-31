@@ -14,12 +14,7 @@ def has_role(role_name):
 class admin(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-    adminRole = []
-    with open("json/admin.json", "r") as admin_data:
-        if "adminRoles" in admin_data:
-            for i in "adminRoles":
-                adminRole.append(i)
-        admin_data.close()
+    adminRole = "Cheffe"
     # Delete messages
     @app_commands.command(name = "messages_delete", description = "Delete messages")
     @has_role(adminRole)
