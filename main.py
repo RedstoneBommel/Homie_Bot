@@ -1,5 +1,5 @@
-from command import help, info, funny, games, joins, translation
-from admin import AdminCommand, AutoAdmin, roles
+from command import help, info, funny, games, translation
+from admin import AdminCommand, AutoAdmin, roles, tickets
 from discord.ext import commands
 from dotenv import load_dotenv
 import discord
@@ -15,11 +15,11 @@ class HomieBot(commands.Bot):
         await self.load_extension('admin.AdminCommand')
         await self.load_extension('admin.AutoAdmin')
         await self.load_extension('admin.roles')
+        await self.load_extension('admin.tickets')
         await self.load_extension('command.help')
         await self.load_extension('command.info')
         # await self.load_extension('command.funny')
         # await self.load_extension('command.games')
-        # await self.load_extension('command.joins')
         await self.load_extension('command.translation')
         print("sync extensions")
         await self.tree.sync()
@@ -80,16 +80,14 @@ class HomieBot(commands.Bot):
             else:
                 await channel.send(member.mention + welcomeMessage)
                 return
-        with open("json/member.json", "r+") as member_data:
-            member_data = json.load(member_data)
+        with open("json/member.json", "r+") as memberData:
+            member_data = json.load(memberData)
             if member.name in member_data:
-                member_data.close()
                 return "Member is already in the register"
             else:
-                member_data[member.name] = {"name": member.name, "id": member.id, "roles": [role.name for role in member.roles], "bannedWordsCounter": 0}
-                json.dump(member_data, member_data)
-                member_data.close()
-        await member.send("Check out our rule channel to be able to our server rules")
+                member_data[member.name] = {"name": member.name, "id": member.id, "roles": [], "bannedWordsCounter": 0}
+                memberData.seek(0)
+                json.dump(member_data, memberData)
 load_dotenv()
 token = os.getenv('TOKEN')
 intents = discord.Intents.all()
