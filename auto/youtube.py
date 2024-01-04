@@ -30,3 +30,5 @@ class youtube(commands.Cog):
                         videoURL = f"htps://youtu.be/{videoID}"
                         await linkChannel.send(f"**{nameChannel}** has uploaded a new video \n\n {videoURL}")
                 videos[nameChannel] = videosID
+async def setup(bot):
+    await bot.add_cog(youtube(bot))
