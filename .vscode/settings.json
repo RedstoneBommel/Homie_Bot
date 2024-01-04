@@ -3,6 +3,7 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "cSpell.words": [
         "dotenv",
+        "scrapetube",
         "unmuted"
     ],
     "graalvm.home": "",
