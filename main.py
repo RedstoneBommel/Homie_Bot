@@ -1,4 +1,4 @@
-from command import help, info, funny, translation, flagGuesser, dragonDuel
+from command import help, info, funny, translation, flagguesser, dragonduel
 from admin import AdminCommand, AutoAdmin, roles, tickets
 from auto import twitch, youtube
 from discord.ext import commands
@@ -20,8 +20,8 @@ class HomieBot(commands.Bot):
         await self.load_extension('command.help')
         await self.load_extension('command.info')
         # await self.load_extension('command.funny')
-        # await self.load_extension('command.flagGuesser')
-        # await self.load_extension('command.dragonDuel')
+        await self.load_extension('command.flagguesser')
+        # await self.load_extension('command.dragonduel')
         await self.load_extension('command.translation')
         # await self.load_extension('auto.twitch')
         # await self.load_extension('auto.youtube')
