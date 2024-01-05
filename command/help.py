@@ -4,7 +4,7 @@ import discord
 from discord.ui import Button, View
 
 def has_role(role_name):
-    def predicate(interaction: discord.Interaction):
+    def predicate(interaction: Interaction):
         role = discord.utils.get(interaction.guild.roles, name = role_name)
         return role is not None
     return commands.check(predicate)

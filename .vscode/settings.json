@@ -2,6 +2,7 @@
     "DockerRun.DisableDockerrc": true,
     "java.debug.settings.onBuildFailureProceed": true,
     "cSpell.words": [
+        "Åland",
         "dotenv",
         "scrapetube",
         "unmuted"

@@ -1,0 +1,977 @@
+{
+    "Afghanistan": {
+        "land": "Afghanistan",
+        "iso 3166 alpha-2": "AF",
+        "flag": "assets/games/FlagGuesser/af.png"
+    },
+    "Åland": {
+        "land": "Åland",
+        "iso 3166 alpha-2": "AX",
+        "flag": "assets/games/FlagGuesser/ax.png"
+    },
+    "Albanien": {
+        "land": "Albanien",
+        "iso 3166 alpha-2": "AL",
+        "flag": "assets/games/FlagGuesser/al.png"
+    },
+    "Algerien": {
+        "land": "Algerien",
+        "iso 3166 alpha-2": "DZ",
+        "flag": "assets/games/FlagGuesser/dz.png"
+    },
+    "Andorra": {
+        "land": "Andorra",
+        "iso 3166 alpha-2": "AD",
+        "flag": "assets/games/FlagGuesser/ad.png"
+    },
+    "Angola": {
+        "land": "Angola",
+        "iso 3166 alpha-2": "AO",
+        "flag": "assets/games/FlagGuesser/ao.png"
+    },
+    "Antigua und Barbuda": {
+        "land": "Antigua und Barbuda",
+        "iso 3166 alpha-2": "AG",
+        "flag": "assets/games/FlagGuesser/ag.png"
+    },
+    "Argentinien": {
+        "land": "Argentinien",
+        "iso 3166 alpha-2": "AR",
+        "flag": "assets/games/FlagGuesser/ar.png"
+    },
+    "Armenien": {
+        "land": "Armenien",
+        "iso 3166 alpha-2": "AM",
+        "flag": "assets/games/FlagGuesser/am.png"
+    },
+    "Australien": {
+        "land": "Australien",
+        "iso 3166 alpha-2": "AU",
+        "flag": "assets/games/FlagGuesser/au.png"
+    },
+    "Österreich": {
+        "land": "Österreich",
+        "iso 3166 alpha-2": "AT",
+        "flag": "assets/games/FlagGuesser/at.png"
+    },
+    "Aserbaidschan": {
+        "land": "Aserbaidschan",
+        "iso 3166 alpha-2": "AZ",
+        "flag": "assets/games/FlagGuesser/az.png"
+    },
+    "Bahamas": {
+        "land": "Bahamas",
+        "iso 3166 alpha-2": "BS",
+        "flag": "assets/games/FlagGuesser/bs.png"
+    },
+    "Bahrain": {
+        "land": "Bahrain",
+        "iso 3166 alpha-2": "BH",
+        "flag": "assets/games/FlagGuesser/bh.png"
+    },
+    "Bangladesch": {
+        "land": "Bangladesch",
+        "iso 3166 alpha-2": "BD",
+        "flag": "assets/games/FlagGuesser/bd.png"
+    },
+    "Barbados": {
+        "land": "Barbados",
+        "iso 3166 alpha-2": "BB",
+        "flag": "assets/games/FlagGuesser/bb.png"
+    },
+    "Belgien": {
+        "land": "Belgien",
+        "iso 3166 alpha-2": "BE",
+        "flag": "assets/games/FlagGuesser/be.png"
+    },
+    "Belize": {
+        "land": "Belize",
+        "iso 3166 alpha-2": "BZ",
+        "flag": "assets/games/FlagGuesser/bz.png"
+    },
+    "Benin": {
+        "land": "Benin",
+        "iso 3166 alpha-2": "BJ",
+        "flag": "assets/games/FlagGuesser/bj.png"
+    },
+    "Bhutan": {
+        "land": "Bhutan",
+        "iso 3166 alpha-2": "BT",
+        "flag": "assets/games/FlagGuesser/bt.png"
+    },
+    "Bolivien": {
+        "land": "Bolivien",
+        "iso 3166 alpha-2": "BO",
+        "flag": "assets/games/FlagGuesser/bo.png"
+    },
+    "Bosnien und Herzegowina": {
+        "land": "Bosnien und Herzegowina",
+        "iso 3166 alpha-2": "BA",
+        "flag": "assets/games/FlagGuesser/ba.png"
+    },
+    "Botswana": {
+        "land": "Botswana",
+        "iso 3166 alpha-2": "BW",
+        "flag": "assets/games/FlagGuesser/bw.png"
+    },
+    "Brasilien": {
+        "land": "Brasilien",
+        "iso 3166 alpha-2": "BR",
+        "flag": "assets/games/FlagGuesser/br.png"
+    },
+    "Brunei": {
+        "land": "Brunei",
+        "iso 3166 alpha-2": "BN",
+        "flag": "assets/games/FlagGuesser/bn.png"
+    },
+    "Bulgarien": {
+        "land": "Bulgarien",
+        "iso 3166 alpha-2": "BG",
+        "flag": "assets/games/FlagGuesser/bg.png"
+    },
+    "Burkina Faso": {
+        "land": "Burkina Faso",
+        "iso 3166 alpha-2": "BF",
+        "flag": "assets/games/FlagGuesser/bf.png"
+    },
+    "Burundi": {
+        "land": "Burundi",
+        "iso 3166 alpha-2": "BI",
+        "flag": "assets/games/FlagGuesser/bi.png"
+    },
+    "Chile": {
+        "land": "Chile",
+        "iso 3166 alpha-2": "CL",
+        "flag": "assets/games/FlagGuesser/cl.png"
+    },
+    "China": {
+        "land": "China",
+        "iso 3166 alpha-2": "CN",
+        "flag": "assets/games/FlagGuesser/cn.png"
+    },
+    "Costa Rica": {
+        "land": "Costa Rica",
+        "iso 3166 alpha-2": "CR",
+        "flag": "assets/games/FlagGuesser/cr.png"
+    },
+    "Dänemark": {
+        "land": "Dänemark",
+        "iso 3166 alpha-2": "DK",
+        "flag": "assets/games/FlagGuesser/dk.png"
+    },
+    "Deutschland": {
+        "land": "Deutschland",
+        "iso 3166 alpha-2": "DE",
+        "flag": "assets/games/FlagGuesser/de.png"
+    },
+    "Dominica": {
+        "land": "Dominica",
+        "iso 3166 alpha-2": "DM",
+        "flag": "assets/games/FlagGuesser/dm.png"
+    },
+    "Dominikanische Republik": {
+        "land": "Dominikanische Republik",
+        "iso 3166 alpha-2": "DO",
+        "flag": "assets/games/FlagGuesser/do.png"
+    },
+    "Dschibuti": {
+        "land": "Dschibuti",
+        "iso 3166 alpha-2": "DJ",
+        "flag": "assets/games/FlagGuesser/dj.png"
+    },
+    "Ecuador": {
+        "land": "Ecuador",
+        "iso 3166 alpha-2": "EC",
+        "flag": "assets/games/FlagGuesser/ec.png"
+    },
+    "Ägypten": {
+        "land": "Ägypten",
+        "iso 3166 alpha-2": "EG",
+        "flag": "assets/games/FlagGuesser/eg.png"
+    },
+    "El Salvador": {
+        "land": "El Salvador",
+        "iso 3166 alpha-2": "SV",
+        "flag": "assets/games/FlagGuesser/sv.png"
+    },
+    "Elfenbeinküste": {
+        "land": "Elfenbeinküste",
+        "iso 3166 alpha-2": "CI",
+        "flag": "assets/games/FlagGuesser/ci.png"
+    },
+    "Eritrea": {
+        "land": "Eritrea",
+        "iso 3166 alpha-2": "ER",
+        "flag": "assets/games/FlagGuesser/er.png"
+    },
+    "Estland": {
+        "land": "Estland",
+        "iso 3166 alpha-2": "EE",
+        "flag": "assets/games/FlagGuesser/ee.png"
+    },
+    "Eswatini": {
+        "land": "Eswatini",
+        "iso 3166 alpha-2": "SZ",
+        "flag": "assets/games/FlagGuesser/sz.png"
+    },
+    "Fidschi": {
+        "land": "Fidschi",
+        "iso 3166 alpha-2": "FJ",
+        "flag": "assets/games/FlagGuesser/fj.png"
+    },
+    "Finnland": {
+        "land": "Finnland",
+        "iso 3166 alpha-2": "FI",
+        "flag": "assets/games/FlagGuesser/fi.png"
+    },
+    "Frankreich": {
+        "land": "Frankreich",
+        "iso 3166 alpha-2": "FR",
+        "flag": "assets/games/FlagGuesser/fr.png"
+    },
+    "Gabun": {
+        "land": "Gabun",
+        "iso 3166 alpha-2": "GA",
+        "flag": "assets/games/FlagGuesser/ga.png"
+    },
+    "Gambia": {
+        "land": "Gambia",
+        "iso 3166 alpha-2": "GM",
+        "flag": "assets/games/FlagGuesser/gm.png"
+    },
+    "Georgien": {
+        "land": "Georgien",
+        "iso 3166 alpha-2": "GE",
+        "flag": "assets/games/FlagGuesser/ge.png"
+    },
+    "Ghana": {
+        "land": "Ghana",
+        "iso 3166 alpha-2": "GH",
+        "flag": "assets/games/FlagGuesser/gh.png"
+    },
+    "Grenada": {
+        "land": "Grenada",
+        "iso 3166 alpha-2": "GD",
+        "flag": "assets/games/FlagGuesser/gd.png"
+    },
+    "Griechenland": {
+        "land": "Griechenland",
+        "iso 3166 alpha-2": "GR",
+        "flag": "assets/games/FlagGuesser/gr.png"
+    },
+    "Guatemala": {
+        "land": "Guatemala",
+        "iso 3166 alpha-2": "GT",
+        "flag": "assets/games/FlagGuesser/gt.png"
+    },
+    "Guinea": {
+        "land": "Guinea",
+        "iso 3166 alpha-2": "GN",
+        "flag": "assets/games/FlagGuesser/gn.png"
+    },
+    "Guinea-Bissau": {
+        "land": "Guinea-Bissau",
+        "iso 3166 alpha-2": "GW",
+        "flag": "assets/games/FlagGuesser/gw.png"
+    },
+    "Guyana": {
+        "land": "Guyana",
+        "iso 3166 alpha-2": "GY",
+        "flag": "assets/games/FlagGuesser/gy.png"
+    },
+    "Haiti": {
+        "land": "Haiti",
+        "iso 3166 alpha-2": "HT",
+        "flag": "assets/games/FlagGuesser/ht.png"
+    },
+    "Honduras": {
+        "land": "Honduras",
+        "iso 3166 alpha-2": "HN",
+        "flag": "assets/games/FlagGuesser/hn.png"
+    },
+    "Indien": {
+        "land": "Indien",
+        "iso 3166 alpha-2": "IN",
+        "flag": "assets/games/FlagGuesser/in.png"
+    },
+    "Indonesien": {
+        "land": "Indonesien",
+        "iso 3166 alpha-2": "ID",
+        "flag": "assets/games/FlagGuesser/id.png"
+    },
+    "Irak": {
+        "land": "Irak",
+        "iso 3166 alpha-2": "IQ",
+        "flag": "assets/games/FlagGuesser/iq.png"
+    },
+    "Iran": {
+        "land": "Iran",
+        "iso 3166 alpha-2": "IR",
+        "flag": "assets/games/FlagGuesser/ir.png"
+    },
+    "Irland": {
+        "land": "Irland",
+        "iso 3166 alpha-2": "IE",
+        "flag": "assets/games/FlagGuesser/ie.png"
+    },
+    "Island": {
+        "land": "Island",
+        "iso 3166 alpha-2": "IS",
+        "flag": "assets/games/FlagGuesser/is.png"
+    },
+    "Israel": {
+        "land": "Israel",
+        "iso 3166 alpha-2": "IL",
+        "flag": "assets/games/FlagGuesser/il.png"
+    },
+    "Italien": {
+        "land": "Italien",
+        "iso 3166 alpha-2": "IT",
+        "flag": "assets/games/FlagGuesser/it.png"
+    },
+    "Jamaika": {
+        "land": "Jamaika",
+        "iso 3166 alpha-2": "JM",
+        "flag": "assets/games/FlagGuesser/jm.png"
+    },
+    "Japan": {
+        "land": "Japan",
+        "iso 3166 alpha-2": "JP",
+        "flag": "assets/games/FlagGuesser/jp.png"
+    },
+    "Jemen": {
+        "land": "Jemen",
+        "iso 3166 alpha-2": "YE",
+        "flag": "assets/games/FlagGuesser/ye.png"
+    },
+    "Jordanien": {
+        "land": "Jordanien",
+        "iso 3166 alpha-2": "JO",
+        "flag": "assets/games/FlagGuesser/jo.png"
+    },
+    "Kambodscha": {
+        "land": "Kambodscha",
+        "iso 3166 alpha-2": "KH",
+        "flag": "assets/games/FlagGuesser/kh.png"
+    },
+    "Kamerun": {
+        "land": "Kamerun",
+        "iso 3166 alpha-2": "CM",
+        "flag": "assets/games/FlagGuesser/cm.png"
+    },
+    "Kanada": {
+        "land": "Kanada",
+        "iso 3166 alpha-2": "CA",
+        "flag": "assets/games/FlagGuesser/ca.png"
+    },
+    "Kap Verde": {
+        "land": "Kap Verde",
+        "iso 3166 alpha-2": "CV",
+        "flag": "assets/games/FlagGuesser/cv.png"
+    },
+    "Kasachstan": {
+        "land": "Kasachstan",
+        "iso 3166 alpha-2": "KZ",
+        "flag": "assets/games/FlagGuesser/kz.png"
+    },
+    "Katar": {
+        "land": "Katar",
+        "iso 3166 alpha-2": "QA",
+        "flag": "assets/games/FlagGuesser/qa.png"
+    },
+    "Kenia": {
+        "land": "Kenia",
+        "iso 3166 alpha-2": "KE",
+        "flag": "assets/games/FlagGuesser/ke.png"
+    },
+    "Kirgisistan": {
+        "land": "Kirgisistan",
+        "iso 3166 alpha-2": "KG",
+        "flag": "assets/games/FlagGuesser/kg.png"
+    },
+    "Kiribati": {
+        "land": "Kiribati",
+        "iso 3166 alpha-2": "KI",
+        "flag": "assets/games/FlagGuesser/ki.png"
+    },
+    "Kolumbien": {
+        "land": "Kolumbien",
+        "iso 3166 alpha-2": "CO",
+        "flag": "assets/games/FlagGuesser/co.png"
+    },
+    "Komoren": {
+        "land": "Komoren",
+        "iso 3166 alpha-2": "KM",
+        "flag": "assets/games/FlagGuesser/km.png"
+    },
+    "Kongo (Dem. Rep.)": {
+        "land": "Kongo (Dem. Rep.)",
+        "iso 3166 alpha-2": "CD",
+        "flag": "assets/games/FlagGuesser/cd.png"
+    },
+    "Kongo (Rep.)": {
+        "land": "Kongo (Rep.)",
+        "iso 3166 alpha-2": "CG",
+        "flag": "assets/games/FlagGuesser/cg.png"
+    },
+    "Nordkorea": {
+        "land": "Nordkorea",
+        "iso 3166 alpha-2": "KP",
+        "flag": "assets/games/FlagGuesser/kp.png"
+    },
+    "Südkorea": {
+        "land": "Südkorea",
+        "iso 3166 alpha-2": "KR",
+        "flag": "assets/games/FlagGuesser/kr.png"
+    },
+    "Kosovo": {
+        "land": "Kosovo",
+        "iso 3166 alpha-2": "XK",
+        "flag": "assets/games/FlagGuesser/xk.png"
+    },
+    "Kroatien": {
+        "land": "Kroatien",
+        "iso 3166 alpha-2": "HR",
+        "flag": "assets/games/FlagGuesser/hr.png"
+    },
+    "Kuba": {
+        "land": "Kuba",
+        "iso 3166 alpha-2": "CU",
+        "flag": "assets/games/FlagGuesser/cu.png"
+    },
+    "Kuwait": {
+        "land": "Kuwait",
+        "iso 3166 alpha-2": "KW",
+        "flag": "assets/games/FlagGuesser/kw.png"
+    },
+    "Laos": {
+        "land": "Laos",
+        "iso 3166 alpha-2": "LA",
+        "flag": "assets/games/FlagGuesser/la.png"
+    },
+    "Lesotho": {
+        "land": "Lesotho",
+        "iso 3166 alpha-2": "LS",
+        "flag": "assets/games/FlagGuesser/ls.png"
+    },
+    "Lettland": {
+        "land": "Lettland",
+        "iso 3166 alpha-2": "LV",
+        "flag": "assets/games/FlagGuesser/lv.png"
+    },
+    "Libanon": {
+        "land": "Libanon",
+        "iso 3166 alpha-2": "LB",
+        "flag": "assets/games/FlagGuesser/lb.png"
+    },
+    "Liberia": {
+        "land": "Liberia",
+        "iso 3166 alpha-2": "LR",
+        "flag": "assets/games/FlagGuesser/lr.png"
+    },
+    "Libyen": {
+        "land": "Libyen",
+        "iso 3166 alpha-2": "LY",
+        "flag": "assets/games/FlagGuesser/ly.png"
+    },
+    "Liechtenstein": {
+        "land": "Liechtenstein",
+        "iso 3166 alpha-2": "LI",
+        "flag": "assets/games/FlagGuesser/li.png"
+    },
+    "Litauen": {
+        "land": "Litauen",
+        "iso 3166 alpha-2": "LT",
+        "flag": "assets/games/FlagGuesser/lt.png"
+    },
+    "Luxemburg": {
+        "land": "Luxemburg",
+        "iso 3166 alpha-2": "LU",
+        "flag": "assets/games/FlagGuesser/lu.png"
+    },
+    "Madagaskar": {
+        "land": "Madagaskar",
+        "iso 3166 alpha-2": "MG",
+        "flag": "assets/games/FlagGuesser/mg.png"
+    },
+    "Malawi": {
+        "land": "Malawi",
+        "iso 3166 alpha-2": "MW",
+        "flag": "assets/games/FlagGuesser/mw.png"
+    },
+    "Malaysia": {
+        "land": "Malaysia",
+        "iso 3166 alpha-2": "MY",
+        "flag": "assets/games/FlagGuesser/my.png"
+    },
+    "Malediven": {
+        "land": "Malediven",
+        "iso 3166 alpha-2": "MV",
+        "flag": "assets/games/FlagGuesser/mv.png"
+    },
+    "Mali": {
+        "land": "Mali",
+        "iso 3166 alpha-2": "ML",
+        "flag": "assets/games/FlagGuesser/ml.png"
+    },
+    "Malta": {
+        "land": "Malta",
+        "iso 3166 alpha-2": "MT",
+        "flag": "assets/games/FlagGuesser/mt.png"
+    },
+    "Marokko": {
+        "land": "Marokko",
+        "iso 3166 alpha-2": "MA",
+        "flag": "assets/games/FlagGuesser/ma.png"
+    },
+    "Marshallinseln": {
+        "land": "Marshallinseln",
+        "iso 3166 alpha-2": "MH",
+        "flag": "assets/games/FlagGuesser/mh.png"
+    },
+    "Mauretanien": {
+        "land": "Mauretanien",
+        "iso 3166 alpha-2": "MR",
+        "flag": "assets/games/FlagGuesser/mr.png"
+    },
+    "Mauritius": {
+        "land": "Mauritius",
+        "iso 3166 alpha-2": "MU",
+        "flag": "assets/games/FlagGuesser/mu.png"
+    },
+    "Mexiko": {
+        "land": "Mexiko",
+        "iso 3166 alpha-2": "MX",
+        "flag": "assets/games/FlagGuesser/mx.png"
+    },
+    "Mikronesien": {
+        "land": "Mikronesien",
+        "iso 3166 alpha-2": "FM",
+        "flag": "assets/games/FlagGuesser/fm.png"
+    },
+    "Moldawien": {
+        "land": "Moldawien",
+        "iso 3166 alpha-2": "MD",
+        "flag": "assets/games/FlagGuesser/md.png"
+    },
+    "Monaco": {
+        "land": "Monaco",
+        "iso 3166 alpha-2": "MC",
+        "flag": "assets/games/FlagGuesser/mc.png"
+    },
+    "Mongolei": {
+        "land": "Mongolei",
+        "iso 3166 alpha-2": "MN",
+        "flag": "assets/games/FlagGuesser/mn.png"
+    },
+    "Montenegro": {
+        "land": "Montenegro",
+        "iso 3166 alpha-2": "ME",
+        "flag": "assets/games/FlagGuesser/me.png"
+    },
+    "Mosambik": {
+        "land": "Mosambik",
+        "iso 3166 alpha-2": "MZ",
+        "flag": "assets/games/FlagGuesser/mz.png"
+    },
+    "Myanmar": {
+        "land": "Myanmar",
+        "iso 3166 alpha-2": "MM",
+        "flag": "assets/games/FlagGuesser/mm.png"
+    },
+    "Namibia": {
+        "land": "Namibia",
+        "iso 3166 alpha-2": "NA",
+        "flag": "assets/games/FlagGuesser/na.png"
+    },
+    "Nauru": {
+        "land": "Nauru",
+        "iso 3166 alpha-2": "NR",
+        "flag": "assets/games/FlagGuesser/nr.png"
+    },
+    "Nepal": {
+        "land": "Nepal",
+        "iso 3166 alpha-2": "NP",
+        "flag": "assets/games/FlagGuesser/np.png"
+    },
+    "Neuseeland": {
+        "land": "Neuseeland",
+        "iso 3166 alpha-2": "NZ",
+        "flag": "assets/games/FlagGuesser/nz.png"
+    },
+    "Nicaragua": {
+        "land": "Nicaragua",
+        "iso 3166 alpha-2": "NI",
+        "flag": "assets/games/FlagGuesser/ni.png"
+    },
+    "Niederlande": {
+        "land": "Niederlande",
+        "iso 3166 alpha-2": "NL",
+        "flag": "assets/games/FlagGuesser/nl.png"
+    },
+    "Niger": {
+        "land": "Niger",
+        "iso 3166 alpha-2": "NE",
+        "flag": "assets/games/FlagGuesser/ne.png"
+    },
+    "Nigeria": {
+        "land": "Nigeria",
+        "iso 3166 alpha-2": "NG",
+        "flag": "assets/games/FlagGuesser/ng.png"
+    },
+    "Nordmazedonien": {
+        "land": "Nordmazedonien",
+        "iso 3166 alpha-2": "MK",
+        "flag": "assets/games/FlagGuesser/mk.png"
+    },
+    "Norwegen": {
+        "land": "Norwegen",
+        "iso 3166 alpha-2": "NO",
+        "flag": "assets/games/FlagGuesser/no.png"
+    },
+    "Oman": {
+        "land": "Oman",
+        "iso 3166 alpha-2": "OM",
+        "flag": "assets/games/FlagGuesser/om.png"
+    },
+    "Österreich": {
+        "land": "Österreich",
+        "iso 3166 alpha-2": "AT",
+        "flag": "assets/games/FlagGuesser/at.png"
+    },
+    "Osttimor": {
+        "land": "Osttimor",
+        "iso 3166 alpha-2": "TL",
+        "flag": "assets/games/FlagGuesser/tl.png"
+    },
+    "Pakistan": {
+        "land": "Pakistan",
+        "iso 3166 alpha-2": "PK",
+        "flag": "assets/games/FlagGuesser/pk.png"
+    },
+    "Palau": {
+        "land": "Palau",
+        "iso 3166 alpha-2": "PW",
+        "flag": "assets/games/FlagGuesser/pw.png"
+    },
+    "Panama": {
+        "land": "Panama",
+        "iso 3166 alpha-2": "PA",
+        "flag": "assets/games/FlagGuesser/pa.png"
+    },
+    "Papua-Neuguinea": {
+        "land": "Papua-Neuguinea",
+        "iso 3166 alpha-2": "PG",
+        "flag": "assets/games/FlagGuesser/pg.png"
+    },
+    "Paraguay": {
+        "land": "Paraguay",
+        "iso 3166 alpha-2": "PY",
+        "flag": "assets/games/FlagGuesser/py.png"
+    },
+    "Peru": {
+        "land": "Peru",
+        "iso 3166 alpha-2": "PE",
+        "flag": "assets/games/FlagGuesser/pe.png"
+    },
+    "Philippinen": {
+        "land": "Philippinen",
+        "iso 3166 alpha-2": "PH",
+        "flag": "assets/games/FlagGuesser/ph.png"
+    },
+    "Polen": {
+        "land": "Polen",
+        "iso 3166 alpha-2": "PL",
+        "flag": "assets/games/FlagGuesser/pl.png"
+    },
+    "Portugal": {
+        "land": "Portugal",
+        "iso 3166 alpha-2": "PT",
+        "flag": "assets/games/FlagGuesser/pt.png"
+    },
+    "Ruanda": {
+        "land": "Ruanda",
+        "iso 3166 alpha-2": "RW",
+        "flag": "assets/games/FlagGuesser/rw.png"
+    },
+    "Rumänien": {
+        "land": "Rumänien",
+        "iso 3166 alpha-2": "RO",
+        "flag": "assets/games/FlagGuesser/ro.png"
+    },
+    "Russland": {
+        "land": "Russland",
+        "iso 3166 alpha-2": "RU",
+        "flag": "assets/games/FlagGuesser/ru.png"
+    },
+    "Sambia": {
+        "land": "Sambia",
+        "iso 3166 alpha-2": "ZM",
+        "flag": "assets/games/FlagGuesser/zm.png"
+    },
+    "Samoa": {
+        "land": "Samoa",
+        "iso 3166 alpha-2": "WS",
+        "flag": "assets/games/FlagGuesser/ws.png"
+    },
+    "San Marino": {
+        "land": "San Marino",
+        "iso 3166 alpha-2": "SM",
+        "flag": "assets/games/FlagGuesser/sm.png"
+    },
+    "São Tomé und Príncipe": {
+        "land": "São Tomé und Príncipe",
+        "iso 3166 alpha-2": "ST",
+        "flag": "assets/games/FlagGuesser/st.png"
+    },
+    "Saudi-Arabien": {
+        "land": "Saudi-Arabien",
+        "iso 3166 alpha-2": "SA",
+        "flag": "assets/games/FlagGuesser/sa.png"
+    },
+    "Schweden": {
+        "land": "Schweden",
+        "iso 3166 alpha-2": "SE",
+        "flag": "assets/games/FlagGuesser/se.png"
+    },
+    "Schweiz": {
+        "land": "Schweiz",
+        "iso 3166 alpha-2": "CH",
+        "flag": "assets/games/FlagGuesser/ch.png"
+    },
+    "Senegal": {
+        "land": "Senegal",
+        "iso 3166 alpha-2": "SN",
+        "flag": "assets/games/FlagGuesser/sn.png"
+    },
+    "Serbien": {
+        "land": "Serbien",
+        "iso 3166 alpha-2": "RS",
+        "flag": "assets/games/FlagGuesser/rs.png"
+    },
+    "Seychellen": {
+        "land": "Seychellen",
+        "iso 3166 alpha-2": "SC",
+        "flag": "assets/games/FlagGuesser/sc.png"
+    },
+    "Sierra Leone": {
+        "land": "Sierra Leone",
+        "iso 3166 alpha-2": "SL",
+        "flag": "assets/games/FlagGuesser/sl.png"
+    },
+    "Simbabwe": {
+        "land": "Simbabwe",
+        "iso 3166 alpha-2": "ZW",
+        "flag": "assets/games/FlagGuesser/zw.png"
+    },
+    "Singapur": {
+        "land": "Singapur",
+        "iso 3166 alpha-2": "SG",
+        "flag": "assets/games/FlagGuesser/sg.png"
+    },
+    "Slowakei": {
+        "land": "Slowakei",
+        "iso 3166 alpha-2": "SK",
+        "flag": "assets/games/FlagGuesser/sk.png"
+    },
+    "Slowenien": {
+        "land": "Slowenien",
+        "iso 3166 alpha-2": "SI",
+        "flag": "assets/games/FlagGuesser/si.png"
+    },
+    "Somalia": {
+        "land": "Somalia",
+        "iso 3166 alpha-2": "SO",
+        "flag": "assets/games/FlagGuesser/so.png"
+    },
+    "Spanien": {
+        "land": "Spanien",
+        "iso 3166 alpha-2": "ES",
+        "flag": "assets/games/FlagGuesser/es.png"
+    },
+    "Sri Lanka": {
+        "land": "Sri Lanka",
+        "iso 3166 alpha-2": "LK",
+        "flag": "assets/games/FlagGuesser/lk.png"
+    },
+    "St. Kitts und Nevis": {
+        "land": "St. Kitts und Nevis",
+        "iso 3166 alpha-2": "KN",
+        "flag": "assets/games/FlagGuesser/kn.png"
+    },
+    "St. Lucia": {
+        "land": "St. Lucia",
+        "iso 3166 alpha-2": "LC",
+        "flag": "assets/games/FlagGuesser/lc.png"
+    },
+    "St. Vincent und die Grenadinen": {
+        "land": "St. Vincent und die Grenadinen",
+        "iso 3166 alpha-2": "VC",
+        "flag": "assets/games/FlagGuesser/vc.png"
+    },
+    "Südafrika": {
+        "land": "Südafrika",
+        "iso 3166 alpha-2": "ZA",
+        "flag": "assets/games/FlagGuesser/za.png"
+    },
+    "Sudan": {
+        "land": "Sudan",
+        "iso 3166 alpha-2": "SD",
+        "flag": "assets/games/FlagGuesser/sd.png"
+    },
+    "Südsudan": {
+        "land": "Südsudan",
+        "iso 3166 alpha-2": "SS",
+        "flag": "assets/games/FlagGuesser/ss.png"
+    },
+    "Suriname": {
+        "land": "Suriname",
+        "iso 3166 alpha-2": "SR",
+        "flag": "assets/games/FlagGuesser/sr.png"
+    },
+    "Syrien": {
+        "land": "Syrien",
+        "iso 3166 alpha-2": "SY",
+        "flag": "assets/games/FlagGuesser/sy.png"
+    },
+    "Tadschikistan": {
+        "land": "Tadschikistan",
+        "iso 3166 alpha-2": "TJ",
+        "flag": "assets/games/FlagGuesser/tj.png"
+    },
+    "Taiwan": {
+        "land": "Taiwan",
+        "iso 3166 alpha-2": "TW",
+        "flag": "assets/games/FlagGuesser/tw.png"
+    },
+    "Tansania": {
+        "land": "Tansania",
+        "iso 3166 alpha-2": "TZ",
+        "flag": "assets/games/FlagGuesser/tz.png"
+    },
+    "Thailand": {
+        "land": "Thailand",
+        "iso 3166 alpha-2": "TH",
+        "flag": "assets/games/FlagGuesser/th.png"
+    },
+    "Togo": {
+        "land": "Togo",
+        "iso 3166 alpha-2": "TG",
+        "flag": "assets/games/FlagGuesser/tg.png"
+    },
+    "Tonga": {
+        "land": "Tonga",
+        "iso 3166 alpha-2": "TO",
+        "flag": "assets/games/FlagGuesser/to.png"
+    },
+    "Trinidad und Tobago": {
+        "land": "Trinidad und Tobago",
+        "iso 3166 alpha-2": "TT",
+        "flag": "assets/games/FlagGuesser/tt.png"
+    },
+    "Tschad": {
+        "land": "Tschad",
+        "iso 3166 alpha-2": "TD",
+        "flag": "assets/games/FlagGuesser/td.png"
+    },
+    "Tschechien": {
+        "land": "Tschechien",
+        "iso 3166 alpha-2": "CZ",
+        "flag": "assets/games/FlagGuesser/cz.png"
+    },
+    "Tunesien": {
+        "land": "Tunesien",
+        "iso 3166 alpha-2": "TN",
+        "flag": "assets/games/FlagGuesser/tn.png"
+    },
+    "Türkei": {
+        "land": "Türkei",
+        "iso 3166 alpha-2": "TR",
+        "flag": "assets/games/FlagGuesser/tr.png"
+    },
+    "Turkmenistan": {
+        "land": "Turkmenistan",
+        "iso 3166 alpha-2": "TM",
+        "flag": "assets/games/FlagGuesser/tm.png"
+    },
+    "Tuvalu": {
+        "land": "Tuvalu",
+        "iso 3166 alpha-2": "TV",
+        "flag": "assets/games/FlagGuesser/tv.png"
+    },
+    "Uganda": {
+        "land": "Uganda",
+        "iso 3166 alpha-2": "UG",
+        "flag": "assets/games/FlagGuesser/ug.png"
+    },
+    "Ukraine": {
+        "land": "Ukraine",
+        "iso 3166 alpha-2": "UA",
+        "flag": "assets/games/FlagGuesser/ua.png"
+    },
+    "Ungarn": {
+        "land": "Ungarn",
+        "iso 3166 alpha-2": "HU",
+        "flag": "assets/games/FlagGuesser/hu.png"
+    },
+    "Uruguay": {
+        "land": "Uruguay",
+        "iso 3166 alpha-2": "UY",
+        "flag": "assets/games/FlagGuesser/uy.png"
+    },
+    "Usbekistan": {
+        "land": "Usbekistan",
+        "iso 3166 alpha-2": "UZ",
+        "flag": "assets/games/FlagGuesser/uz.png"
+    },
+    "Vanuatu": {
+        "land": "Vanuatu",
+        "iso 3166 alpha-2": "VU",
+        "flag": "assets/games/FlagGuesser/vu.png"
+    },
+    "Vatikanstadt": {
+        "land": "Vatikanstadt",
+        "iso 3166 alpha-2": "VA",
+        "flag": "assets/games/FlagGuesser/va.png"
+    },
+    "Venezuela": {
+        "land": "Venezuela",
+        "iso 3166 alpha-2": "VE",
+        "flag": "assets/games/FlagGuesser/ve.png"
+    },
+    "Vereinigte Arabische Emirate": {
+        "land": "Vereinigte Arabische Emirate",
+        "iso 3166 alpha-2": "AE",
+        "flag": "assets/games/FlagGuesser/ae.png"
+    },
+    "Vereinigte Staaten": {
+        "land": "Vereinigte Staaten",
+        "iso 3166 alpha-2": "US",
+        "flag": "assets/games/FlagGuesser/us.png"
+    },
+    "Vereinigtes Königreich": {
+        "land": "Vereinigtes Königreich",
+        "iso 3166 alpha-2": "GB",
+        "flag": "assets/games/FlagGuesser/gb.png"
+    },
+    "Vietnam": {
+        "land": "Vietnam",
+        "iso 3166 alpha-2": "VN",
+        "flag": "assets/games/FlagGuesser/vn.png"
+    },
+    "Weißrussland": {
+        "land": "Weißrussland",
+        "iso 3166 alpha-2": "BY",
+        "flag": "assets/games/FlagGuesser/by.png"
+    },
+    "Zentralafrikanische Republik": {
+        "land": "Zentralafrikanische Republik",
+        "iso 3166 alpha-2": "CF",
+        "flag": "assets/games/FlagGuesser/cf.png"
+    },
+    "Zypern": {
+        "land": "Zypern",
+        "iso 3166 alpha-2": "CY",
+        "flag": "assets/games/FlagGuesser/cy.png"
+    }
+}
