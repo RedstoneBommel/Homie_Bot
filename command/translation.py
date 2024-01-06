@@ -28,9 +28,7 @@ class translation(commands.Cog):
             await interaction.response.send_message("Unknown language")
             return "Unknown language"
         else:
-            # Aufschieben der Interaktion
             await interaction.response.defer()
-            # Senden der Nachfolgenachricht
             translated_text = self.translator.translate(text, src = src_language, dest = language).text
             await interaction.followup.send(translated_text)
 

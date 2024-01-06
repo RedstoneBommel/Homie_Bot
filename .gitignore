@@ -5,3 +5,5 @@ json/bannedWords.json
 json/bans.json
 json/kicks.json
 json/mute.json
+json/scoreboard.json
+.vscode/settings.json
