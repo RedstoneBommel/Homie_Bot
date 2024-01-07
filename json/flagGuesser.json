@@ -634,11 +634,6 @@
         "iso 3166 alpha-2": "OM",
         "flag": "assets/games/FlagGuesser/om.png"
     },
-    "Österreich": {
-        "land": "Österreich",
-        "iso 3166 alpha-2": "AT",
-        "flag": "assets/games/FlagGuesser/at.png"
-    },
     "Osttimor": {
         "land": "Osttimor",
         "iso 3166 alpha-2": "TL",
