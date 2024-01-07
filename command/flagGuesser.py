@@ -44,17 +44,18 @@ class flagguesser(commands.Cog):
         country = [flagGuesserData[country]["land"] for country in flagGuesserData]
         iso = [flagGuesserData[country]["iso 3166 alpha-2"] for country in flagGuesserData]
         path = [flagGuesserData[country]["flag"] for country in flagGuesserData]
-        if len(country) == len(iso) == len(path) and len(country) == 193:
+        print(len(country))
+        if len(country) == len(iso) == len(path) and len(country) == 194:
             event = asyncio.Event()
             for i in range(rounds):
-                roundFlag = random.randint(0, 192)
+                roundFlag = random.randint(0, 193)
                 isoCode = iso[roundFlag]
                 pathChoice = path[roundFlag]
                 options = [country[roundFlag]]
                 for j in range(0, 3):
-                    randomOption = random.randint(0, 192)
+                    randomOption = random.randint(0, 193)
                     while country[randomOption] in options:
-                        randomOption = random.randint(0, 192)
+                        randomOption = random.randint(0, 193)
                     options.append(country[randomOption])
                 flagImage = File(f"{pathChoice}", filename = f"{isoCode.lower()}.png")
                 guesser = Embed(title = "Flag Guesser - Do you know this country?")
